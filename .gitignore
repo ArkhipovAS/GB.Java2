@@ -1,0 +1,8 @@
+*.[oa]
+
+.idea/
+
+.target/
+
+.out/
+.iml/
