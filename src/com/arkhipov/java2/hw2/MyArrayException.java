@@ -1,7 +1,9 @@
+package com.arkhipov.java2.hw2;
+
 public class MyArrayException extends Exception{
 
-    public MyArrayException(String wrong_size_array) {
-        super(wrong_size_array);
+    public MyArrayException(String wrong__array) {
+        super(wrong__array);
     }
 
     public MyArrayException(String wrong_value_array, NumberFormatException e) {

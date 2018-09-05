@@ -5,7 +5,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
 
-public class j2hw3 {
+public class PhoneBook {
     public static void main(String[] args) {
 
         System.out.println("Task1");

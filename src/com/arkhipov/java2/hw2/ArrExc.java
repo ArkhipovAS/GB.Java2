@@ -1,8 +1,8 @@
-//import java.util.Arrays;
+package com.arkhipov.java2.hw2;
 
-public class j2hw2 {
+public class ArrExc {
 
-    private static final int SIZE = 4;
+    private static final int SIZE  = 4;
     private static String [][] array = new String[][] {
             {"1", "2", "3", "4"},
             {"5", "6", "7", "8"},
@@ -14,23 +14,23 @@ public class j2hw2 {
         try {
             int resultsum = calcArraySum(array);
             System.out.println("The sum of all elements of the array is: " + resultsum);
-        } catch (MyArraySizeException e){
-            System.out.println("Wrong size array" + e.toString());
+        } catch (MySizeArrayException e){
+            System.out.println("Wrong  array" + e.toString());
         } catch (MyDataArrayException e){
             System.out.println("Wrong data array" + e.toString());
         }
 
     }
 
-    private static int calcArraySum(String [][] array) throws MyArraySizeException, MyDataArrayException {
+    private static int calcArraySum(String [][] array) throws MySizeArrayException, MyDataArrayException {
         int result = 0;
         try {
             if (array.length != SIZE)
-                throw new MyArraySizeException("Wrong size array " + array.length);
+                throw new MyArrayException("Wrong  array " + array.length);
 
             for (int i = 0; i < array.length; i++) {
                 if (array[i].length != SIZE)
-                    throw new MyArraySizeException("Wrong size array: "+ array.length);
+                    throw new MyArrayException("Wrong  array: "+ array.length);
 
                 for (int i1 = 0; i1 < array[i].length; i1++) {
                     try {

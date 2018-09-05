@@ -1,3 +1,5 @@
+package com.arkhipov.java2.hw2;
+
 public class MyDataArrayException extends MyArrayException {
     private int i;
     private int i1;
